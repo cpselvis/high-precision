@@ -1,2 +1,2 @@
 # high-precision
-High-precision computing implements with node.js
+High-precision computing implements with javascript

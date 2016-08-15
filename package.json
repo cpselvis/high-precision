@@ -1,0 +1,26 @@
+{
+  "name": "high-precision",
+  "version": "0.1.0",
+  "description": "High-precision computing implements with node.js",
+  "main": "high-precision.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cpselvis/high-precision.git"
+  },
+  "keywords": [
+    "High-precision",
+    "Add",
+    "Subtract",
+    "Multiply",
+    "Divide"
+  ],
+  "author": "cpselvis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cpselvis/high-precision/issues"
+  },
+  "homepage": "https://github.com/cpselvis/high-precision#readme"
+}
