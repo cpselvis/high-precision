@@ -106,7 +106,22 @@ var subtract = function (a, b) {
  * @return {string}
  */
 var multiply = function (a, b) {
+  var aarr = a.split('').reverse(),
+      barr = b.split('').reverse();
 
+  var arr = new Array(aarr.length + barr.length);
+  for (var k = 0; k < arr.length; k ++) {
+    arr[k] = 0;
+  }
+
+  for (var i = 0; i < aarr.length; i ++) {
+    for (var j = 0; j < barr.length; j ++) {
+      var tmp = arr[i + j] + aarr[i] * barr[j];
+      arr[i + j] = tmp % 10;
+      arr[i + j + 1] = (tmp - tmp % 10) / 10;
+    }
+  }
+  return arr.reverse().join('').replace(/^0+/, '');
 };
 
 /**
@@ -125,3 +140,5 @@ var divide = function (a, b) {
 console.log(add('1409','1612') === '3021', true);
 
 console.log(subtract('1409', '1612') === '-203', true);
+
+console.log(multiply('12', '12') === '144', true);
